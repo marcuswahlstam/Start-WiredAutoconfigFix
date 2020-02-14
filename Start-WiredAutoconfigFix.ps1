@@ -48,5 +48,5 @@ $CustomPart = (
 ""
 )
 
-# Create a new and modified $SetupCompleteTemplate
+# Modify $SetupCompleteTemplate with new content
 Set-Content $SetupCompleteTemplate -Value $FirstPart,$CustomPart,$LastPart
