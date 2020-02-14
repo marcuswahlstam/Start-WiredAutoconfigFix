@@ -49,6 +49,4 @@ $CustomPart = (
 )
 
 # Create a new and modified $SetupCompleteTemplate
-$FirstPart | Out-File "$SetupCompleteTemplate" -Encoding utf8
-$CustomPart | Out-File "$SetupCompleteTemplate" -Append -Encoding utf8
-$LastPart | Out-File "$SetupCompleteTemplate" -Append -Encoding utf8
+Set-Content $SetupCompleteTemplate -Value $FirstPart,$CustomPart,$LastPart
