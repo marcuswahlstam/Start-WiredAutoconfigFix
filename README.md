@@ -1,7 +1,7 @@
 # Start-WiredAutoconfigFix
 Having problems with 802.1x in Windows 10 Inplace-upgrade? This script is for you!
 
-Just run the script in you Task Sequence ahead of the Upgrade Operating System step.
+Just run the script in you Task Sequence before the Upgrade Operating System step.
 
 The script inserts a few commands to SetupCompleteTemplate.cmd so the computer is able to authenticate with it's machine certificate.
 
